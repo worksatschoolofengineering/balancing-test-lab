@@ -37,10 +37,40 @@ Esta arquitectura permite alta disponibilidad y escalabilidad horizontal, ya que
  - Ejecución del script que documente paso a paso y explique en cada parte del proceso que es lo que ha sucedido.
 
 
+### Que se va a Documentar?
+
+📸 Screenshots recomendados para tu informe:
+
+- 1️⃣ curl backend1 mostrando Backend 1
+- 2️⃣ curl backend2 mostrando Backend 2
+- 3️⃣ Resultado de curl localhost:8080 alternando
+- 4️⃣ Navegador mostrando Backend 1
+- 5️⃣ Navegador mostrando Backend 2
+- 6️⃣ docker ps mostrando contenedores
+- 7️⃣ docker stats durante pruebas
+- 8️⃣ Pruebas de carga ab -n 1000 -c 10
+- 9️⃣ Pruebas de carga ab -n 20000 -c 200 -k
+
+Con eso cumples TODA la evidencia de la entrega.
+
+📸 EL SCRIPT YA HACE TODO AUTOMÁTICO
+
+Cuando termine podrás tomar screenshots de:
+
+- ✔ docker ps
+- ✔ docker stats
+- ✔ Respuesta alternada del balanceador
+- ✔ Pruebas de carga con ab
+- ✔ Estructura del laboratorio en ~/lab-docker
+- ✔ Configuración generada
+
+
+
+
 ### De cuantos scripts requiere? 
 
 1. Un script para levantar todo el laboratorio, los contenedores y la instalción de aapche benchmark.
 
-2. Un script para la ejecución de tods las pruebas y resultados de metricas. Paso a Paso.
+2. Un script para la ejecución de todos las pruebas y resultados de metricas. Paso a Paso.
 
 3. Un script que documente todo el resultado optenido, y explique en cada paso que ha sucedido.
